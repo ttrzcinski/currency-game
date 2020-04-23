@@ -2,3 +2,11 @@
 <input type="text" #name>
 <button (click)="sayHello(name.value)">Say hello</button>
 {{messageForUser}}
+
+<br><br>
+{{rootObject.rates.PLN}}
+
+<p>Type value of PLN to EUR:</p>
+<input type="text" #currency>
+<button (click)="check(currency.value)">Check</button>
+{{result}}
